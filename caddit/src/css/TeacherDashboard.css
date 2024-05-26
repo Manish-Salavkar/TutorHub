@@ -1,0 +1,57 @@
+.MuiBox-root {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashhead {
+    display: flex;
+    flex-direction: row;
+}
+
+.PA-buttons {
+    display: flex;
+    padding-left: 50px;
+}
+
+.PA-buttons button {
+    margin-left: 20px;
+    /* background-color: darkgray; */
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.PA-buttons button:hover {
+    background-color: darkgray;
+}
+
+#present-button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: green;
+    transition: top 0.3s ease;
+    z-index: -1;
+}
+  
+#present-button:hover::after {
+    top: 50%;
+}
+
+#absent-button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: red;
+    transition: top 0.3s ease;
+    z-index: -1;
+}
+  
+#absent-button:hover::after {
+    top: 50%;
+}

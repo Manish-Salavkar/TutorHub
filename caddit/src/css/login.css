@@ -1,0 +1,15 @@
+.loginContainer {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginContainer h4 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
